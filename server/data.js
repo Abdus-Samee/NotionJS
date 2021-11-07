@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 var router = express.Router();
 
-mongoose.connect('mongodb+srv://Abdus:21@reactnodejs.x16i5.mongodb.net/taskDB', {useNewUrlParser : true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://<username>:<password>@reactnodejs.x16i5.mongodb.net/taskDB', {useNewUrlParser : true, useUnifiedTopology: true })
 
 const taskSchema = new mongoose.Schema({
   content: {
